@@ -1,17 +1,32 @@
 <?php
 
 for ($i = 1; $i <= 100; ++$i) {
+    echo toFizzBuzz($i);
+    echo PHP_EOL;
+}
+
+/**
+ * Fizz Buzz フィルタに通した結果を返す。
+ *
+ * @param int $target
+ *
+ * @return string
+ */
+function toFizzBuzz($target)
+{
+    $converted = '';
     $unlessFzzBuzz = true;
-    if ($i % 3 === 0) {
-        echo 'Fizz';
+    if ($target % 3 === 0) {
+        $converted .= 'Fizz';
         $unlessFzzBuzz = false;
     }
-    if ($i % 5 === 0) {
-        echo 'Buzz';
+    if ($target % 5 === 0) {
+        $converted .= 'Buzz';
         $unlessFzzBuzz = false;
     }
     if ($unlessFzzBuzz) {
-        echo $i;
+        $converted = (string) $target;
     }
-    echo PHP_EOL;
+
+    return $converted;
 }
