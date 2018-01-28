@@ -1,6 +1,6 @@
 <?php
 
-require_once '../init.php';
+require_once __DIR__.'/../init.php';
 
 // constants
 // @todo move to init.php or constants.php or class constant.

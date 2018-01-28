@@ -1,6 +1,6 @@
 <?php
 
-require_once '../init.php';
+require_once __DIR__.'/../init.php';
 
 // <ul> でフォーマットするフォーマッタの単体テスト
 $unorderedListFormatter = new UnorderedListAbstractFormatter();
