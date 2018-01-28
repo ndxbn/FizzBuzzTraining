@@ -1,0 +1,26 @@
+{
+    "name": "ndxbn/fizz-buzz-training",
+    "version": "0.1.0",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ndxbn",
+            "email": "sitri.ndxbn@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "start": "@php ./public/index.php",
+        "serve": "@php -S 0.0.0.0:8080 ./public/index.php",
+        "test": [
+            "@php ./tests/FormatterTest.php",
+            "@php ./tests/toFizzBuzzTest.php"
+        ]
+    },
+    "scripts-descriptions": {
+        "start": "run application on CLI mode.",
+        "serve": "run application on build-in web server.",
+        "test": "run all unit/feature test"
+    }
+}
