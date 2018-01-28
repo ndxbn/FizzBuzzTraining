@@ -10,6 +10,14 @@
         }
     ],
     "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "FizzBuzzTraining\\": "src/"
+        },
+        "files": [
+            "src/toFizzBuzz.php"
+        ]
+    },
     "scripts": {
         "start": "@php ./public/index.php",
         "serve": "@php -S 0.0.0.0:8080 ./public/index.php",

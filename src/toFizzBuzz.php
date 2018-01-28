@@ -1,5 +1,7 @@
 <?php
 
+namespace FizzBuzzTraining;
+
 /**
  * Fizz Buzz フィルタに通した結果を返す。
  *

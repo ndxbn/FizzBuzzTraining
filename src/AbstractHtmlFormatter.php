@@ -1,4 +1,5 @@
 <?php
+namespace FizzBuzzTraining;
 
 require_once 'AbstractFormatter.php';
 

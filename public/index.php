@@ -16,15 +16,15 @@ if (false === $mode) {
 }
 
 // formatter
-/** @var AbstractFormatter $formatter */
-$formatter = new ConsoleFormatter();
+/** @var \FizzBuzzTraining\AbstractFormatter $formatter */
+$formatter = new \FizzBuzzTraining\ConsoleFormatter();
 if (MODE_HTML_UNORDERED_LIST === $mode) {
-    $formatter = new UnorderedListAbstractFormatter();
+    $formatter = new \FizzBuzzTraining\UnorderedListAbstractFormatter();
 }
 
 // printer
 $outputBuffer = '';
 for ($i = 1; $i <= 100; ++$i) {
-    $outputBuffer .= $formatter->format(toFizzBuzz($i));
+    $outputBuffer .= $formatter->format(\FizzBuzzTraining\toFizzBuzz($i));
 }
 echo $outputBuffer;

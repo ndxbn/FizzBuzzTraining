@@ -1,5 +1,7 @@
 <?php
 
+namespace FizzBuzzTraining;
+
 require_once 'AbstractHtmlFormatter.php';
 
 class UnorderedListAbstractFormatter extends AbstractFormatter
