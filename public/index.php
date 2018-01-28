@@ -19,7 +19,7 @@ if (false === $mode) {
 /** @var \FizzBuzzTraining\AbstractFormatter $formatter */
 $formatter = new \FizzBuzzTraining\ConsoleFormatter();
 if (MODE_HTML_UNORDERED_LIST === $mode) {
-    $formatter = new \FizzBuzzTraining\UnorderedListAbstractFormatter();
+    $formatter = new \FizzBuzzTraining\UnorderedListFormatter();
 }
 
 // printer

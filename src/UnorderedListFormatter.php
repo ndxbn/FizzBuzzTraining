@@ -4,7 +4,7 @@ namespace FizzBuzzTraining;
 
 require_once 'AbstractHtmlFormatter.php';
 
-class UnorderedListAbstractFormatter extends AbstractFormatter
+class UnorderedListFormatter extends AbstractFormatter
 {
     /**
      * @param string $str
