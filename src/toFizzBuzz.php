@@ -9,7 +9,7 @@ namespace FizzBuzzTraining;
  *
  * @return string
  */
-function toFizzBuzz($target)
+function toFizzBuzz($target): string
 {
     $converted = '';
     $unlessFzzBuzz = true;
