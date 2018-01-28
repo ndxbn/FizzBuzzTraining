@@ -24,8 +24,6 @@ if (MODE_HTML_UNORDERED_LIST === $mode) {
 }
 
 // printer
-$outputBuffer = '';
 for ($i = 1; $i <= 100; ++$i) {
-    $outputBuffer .= $formatter->format(\FizzBuzzTraining\toFizzBuzz($i));
+    echo $formatter->format(\FizzBuzzTraining\toFizzBuzz($i));
 }
-echo $outputBuffer;
