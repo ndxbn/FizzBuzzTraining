@@ -1,7 +1,6 @@
 <?php
-namespace FizzBuzzTraining;
 
-require_once 'AbstractFormatter.php';
+namespace FizzBuzzTraining\Formatter;
 
 abstract class AbstractHtmlAbstractFormatter extends AbstractFormatter
 {

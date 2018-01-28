@@ -1,8 +1,6 @@
 <?php
 
-namespace FizzBuzzTraining;
-
-require_once 'AbstractHtmlFormatter.php';
+namespace FizzBuzzTraining\Formatter;
 
 class UnorderedListFormatter extends AbstractFormatter
 {
@@ -11,7 +9,7 @@ class UnorderedListFormatter extends AbstractFormatter
      *
      * @return string
      */
-    public function format(string $str):string
+    public function format(string $str): string
     {
         return "<ul>{$str}</ul>";
     }

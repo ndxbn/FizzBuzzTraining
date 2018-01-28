@@ -1,5 +1,6 @@
 <?php
-namespace FizzBuzzTraining;
+
+namespace FizzBuzzTraining\Formatter;
 
 abstract class AbstractFormatter
 {
@@ -8,5 +9,5 @@ abstract class AbstractFormatter
      *
      * @return string
      */
-    abstract public function format(string $str):string;
+    abstract public function format(string $str): string;
 }

@@ -1,25 +1,26 @@
 <?php
 
-require_once __DIR__.'/../init.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 // constants
-// @todo move to init.php or constants.php or class constant.
-const MODE_CLI = 0;
-const MODE_HTML_UNORDERED_LIST = 1;
+const MODE_CLI = 1;
+const MODE_HTML_UNORDERED_LIST = 2;
+
+const MODE_DEFAULT = MODE_CLI;
 
 // routing
 // with mode
 /** @var int $mode */
 $mode = filter_input(INPUT_GET, 'mode', FILTER_VALIDATE_INT);
 if (false === $mode) {
-    $mode = 0;
+    $mode = MODE_DEFAULT;
 }
 
 // formatter
-/** @var \FizzBuzzTraining\AbstractFormatter $formatter */
-$formatter = new \FizzBuzzTraining\ConsoleFormatter();
+/** @var \FizzBuzzTraining\Formatter\AbstractFormatter $formatter */
+$formatter = new \FizzBuzzTraining\Formatter\ConsoleFormatter();
 if (MODE_HTML_UNORDERED_LIST === $mode) {
-    $formatter = new \FizzBuzzTraining\UnorderedListFormatter();
+    $formatter = new \FizzBuzzTraining\Formatter\UnorderedListFormatter();
 }
 
 // printer
