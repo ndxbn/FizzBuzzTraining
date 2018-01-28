@@ -2,7 +2,7 @@
 
 namespace FizzBuzzTraining\Formatter;
 
-require_once __DIR__ . '/../init.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 // <ul> でフォーマットするフォーマッタの単体テスト
 $unorderedListFormatter = new UnorderedListFormatter();

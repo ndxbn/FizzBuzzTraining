@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/../init.php';
+require_once __DIR__ . '/../bootstrap.php';
 
 // constants
 const MODE_CLI = 1;
