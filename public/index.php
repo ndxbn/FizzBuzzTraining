@@ -4,15 +4,17 @@ require_once __DIR__.'/../init.php';
 
 // constants
 // @todo move to init.php or constants.php or class constant.
-const MODE_CLI = 0;
-const MODE_HTML_UNORDERED_LIST = 1;
+const MODE_CLI = 1;
+const MODE_HTML_UNORDERED_LIST = 2;
+
+const MODE_DEFAULT = MODE_CLI;
 
 // routing
 // with mode
 /** @var int $mode */
 $mode = filter_input(INPUT_GET, 'mode', FILTER_VALIDATE_INT);
 if (false === $mode) {
-    $mode = 0;
+    $mode = MODE_DEFAULT;
 }
 
 // formatter
