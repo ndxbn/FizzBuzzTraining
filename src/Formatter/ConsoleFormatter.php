@@ -2,8 +2,6 @@
 
 namespace FizzBuzzTraining\Formatter;
 
-require_once 'AbstractFormatter.php';
-
 class ConsoleFormatter extends AbstractFormatter
 {
     /**
