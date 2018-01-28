@@ -1,9 +1,10 @@
 <?php
+namespace FizzBuzzTraining;
 
 require_once __DIR__.'/../init.php';
 
 // <ul> でフォーマットするフォーマッタの単体テスト
-$unorderedListFormatter = new UnorderedListAbstractFormatter();
+$unorderedListFormatter = new UnorderedListFormatter();
 assert('<ul>1</ul>' === $unorderedListFormatter->format('1'));
 assert('<ul>Fizz</ul>' === $unorderedListFormatter->format('Fizz'));
 assert('<ul>FizzBuzz</ul>' === $unorderedListFormatter->format('FizzBuzz'));

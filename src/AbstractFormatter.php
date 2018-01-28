@@ -1,4 +1,5 @@
 <?php
+namespace FizzBuzzTraining;
 
 abstract class AbstractFormatter
 {
