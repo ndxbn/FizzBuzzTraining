@@ -16,10 +16,10 @@ if (false === $mode) {
 }
 
 // formatter
-/** @var \FizzBuzzTraining\AbstractFormatter $formatter */
-$formatter = new \FizzBuzzTraining\ConsoleFormatter();
+/** @var \FizzBuzzTraining\Formatter\AbstractFormatter $formatter */
+$formatter = new \FizzBuzzTraining\Formatter\ConsoleFormatter();
 if (MODE_HTML_UNORDERED_LIST === $mode) {
-    $formatter = new \FizzBuzzTraining\UnorderedListFormatter();
+    $formatter = new \FizzBuzzTraining\Formatter\UnorderedListFormatter();
 }
 
 // printer

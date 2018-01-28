@@ -1,5 +1,5 @@
 <?php
-namespace FizzBuzzTraining;
+namespace FizzBuzzTraining\Formatter;
 
 require_once __DIR__.'/../init.php';
 
