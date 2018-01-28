@@ -9,5 +9,5 @@ abstract class AbstractFormatter
      *
      * @return string
      */
-    abstract public function format(string $str):string;
+    abstract public function format(string $str): string;
 }

@@ -9,7 +9,7 @@ class UnorderedListFormatter extends AbstractFormatter
      *
      * @return string
      */
-    public function format(string $str):string
+    public function format(string $str): string
     {
         return "<ul>{$str}</ul>";
     }
