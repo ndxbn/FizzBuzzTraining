@@ -3,7 +3,6 @@
 require_once __DIR__.'/../init.php';
 
 // constants
-// @todo move to init.php or constants.php or class constant.
 const MODE_CLI = 1;
 const MODE_HTML_UNORDERED_LIST = 2;
 
